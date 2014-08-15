@@ -27,6 +27,7 @@
 		0729B449199D8984003E02A9 /* MenuBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 0729B443199D8984003E02A9 /* MenuBackground.png */; };
 		0729B44A199D8984003E02A9 /* Ship.png in Resources */ = {isa = PBXBuildFile; fileRef = 0729B444199D8984003E02A9 /* Ship.png */; };
 		0729B44B199D8984003E02A9 /* YellowMonster.png in Resources */ = {isa = PBXBuildFile; fileRef = 0729B445199D8984003E02A9 /* YellowMonster.png */; };
+		0729B44E199D8D25003E02A9 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 0729B44D199D8D25003E02A9 /* Game.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		0729B443199D8984003E02A9 /* MenuBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MenuBackground.png; path = Images/MenuBackground.png; sourceTree = "<group>"; };
 		0729B444199D8984003E02A9 /* Ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ship.png; path = Images/Ship.png; sourceTree = "<group>"; };
 		0729B445199D8984003E02A9 /* YellowMonster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = YellowMonster.png; path = Images/YellowMonster.png; sourceTree = "<group>"; };
+		0729B44C199D8D25003E02A9 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../Game.h; sourceTree = "<group>"; };
+		0729B44D199D8D25003E02A9 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = ../Game.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,8 @@
 				0729B41D199D8909003E02A9 /* Main.storyboard */,
 				0729B420199D8909003E02A9 /* ViewController.h */,
 				0729B421199D8909003E02A9 /* ViewController.m */,
+				0729B44C199D8D25003E02A9 /* Game.h */,
+				0729B44D199D8D25003E02A9 /* Game.m */,
 				0729B423199D8909003E02A9 /* Images.xcassets */,
 				0729B412199D8909003E02A9 /* Supporting Files */,
 			);
@@ -276,6 +281,7 @@
 				0729B422199D8909003E02A9 /* ViewController.m in Sources */,
 				0729B41C199D8909003E02A9 /* AppDelegate.m in Sources */,
 				0729B418199D8909003E02A9 /* main.m in Sources */,
+				0729B44E199D8D25003E02A9 /* Game.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
