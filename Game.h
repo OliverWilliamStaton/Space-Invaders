@@ -8,6 +8,24 @@
 
 #import <UIKit/UIKit.h>
 
+int ShipMovement;
+int BulletMovement;
+int BulletsOnScreen;
+
 @interface Game : UIViewController
+{
+    IBOutlet UIButton *Start;
+    IBOutlet UIButton *Exit;
+    IBOutlet UIButton *Shoot;
+    
+    IBOutlet UIImageView *Ship;
+    IBOutlet UIImageView *Bullet;
+    
+    NSTimer *MovementTimer;
+}
+
+-(IBAction)Start:(id)sender;
+-(IBAction)Exit:(id)sender;
+-(IBAction)Shoot:(id)sender;
 
 @end

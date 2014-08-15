@@ -34,16 +34,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOk-JJ-mPK">
-                                <rect key="frame" x="93" y="479" width="135" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOi-0c-K7Y">
+                                <rect key="frame" x="114" y="482" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Start">
                                     <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="VlL-Lg-b4z" kind="modal" id="aH1-C9-GWM"/>
+                                    <segue destination="VlL-Lg-b4z" kind="modal" id="ISv-Hz-kVd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,10 +53,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Game-->
         <scene sceneID="xNy-Si-JlA">
             <objects>
-                <viewController id="VlL-Lg-b4z" sceneMemberID="viewController">
+                <viewController id="VlL-Lg-b4z" customClass="Game" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xoy-yB-UYC"/>
                         <viewControllerLayoutGuide type="bottom" id="HUc-HU-JOu"/>
@@ -73,6 +73,9 @@
                                     <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="Start:" destination="VlL-Lg-b4z" eventType="touchUpInside" id="HzZ-Fm-HZx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zbb-0u-1uK">
                                 <rect key="frame" x="156" y="304" width="99" height="41"/>
@@ -82,6 +85,9 @@
                                     <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="Exit:" destination="VlL-Lg-b4z" eventType="touchUpInside" id="Z0U-Hh-eNH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c16-5K-J7Y">
                                 <rect key="frame" x="130" y="408" width="140" height="41"/>
@@ -91,6 +97,9 @@
                                     <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="Shoot:" destination="VlL-Lg-b4z" eventType="touchUpInside" id="AZp-8N-XHK"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ship.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZPx-g0-trJ">
                                 <rect key="frame" x="142" y="500" width="38" height="40"/>
@@ -103,10 +112,17 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="Bullet" destination="ygn-EK-M8K" id="Rhy-e5-KQt"/>
+                        <outlet property="Exit" destination="Zbb-0u-1uK" id="KsV-ga-2X4"/>
+                        <outlet property="Ship" destination="ZPx-g0-trJ" id="1GK-hf-5VY"/>
+                        <outlet property="Shoot" destination="c16-5K-J7Y" id="Qgd-d4-WNc"/>
+                        <outlet property="Start" destination="M0h-LQ-kw4" id="dLS-DJ-UMe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TsS-vD-dh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="687" y="138"/>
+            <point key="canvasLocation" x="553" y="138"/>
         </scene>
     </scenes>
     <resources>
